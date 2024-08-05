@@ -27,6 +27,7 @@ import CreateNewCourseForm from './create-new-course-form';
 import messages from './messages';
 import { useStudioHome } from './hooks';
 import AlertMessage from '../generic/alert-message';
+import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
 
 const StudioHome = ({ intl }) => {
   const location = useLocation();
@@ -60,7 +61,8 @@ const StudioHome = ({ intl }) => {
     libraryAuthoringMfeUrl,
     redirectToLibraryAuthoringMfe,
   } = studioHomeData;
-
+  const authUser = getAuthenticatedUser();
+  console.log(authUser);
   const getHeaderButtons = useCallback(() => {
     const headerButtons = [];
 
