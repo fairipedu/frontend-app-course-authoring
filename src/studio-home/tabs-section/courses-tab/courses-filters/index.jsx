@@ -107,7 +107,7 @@ const CoursesFilters = ({
           value={cleanFilters ? '' : inputSearchValue}
           className="mr-4"
           data-testid="input-filter-courses-search"
-          placeholder="Search"
+          placeholder="검색어를 입력하세요"
         />
         {isLoading && (
           <span className="search-field-loading" data-testid="loading-search-spinner">

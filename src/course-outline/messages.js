@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.course-outline.headingTitle',
-    defaultMessage: 'Course outline',
+    defaultMessage: '강의 개요',
   },
   headingSubtitle: {
     id: 'course-authoring.course-outline.subTitle',
@@ -11,11 +11,11 @@ const messages = defineMessages({
   },
   alertSuccessTitle: {
     id: 'course-authoring.course-outline.reindex.alert.success.title',
-    defaultMessage: 'Course index',
+    defaultMessage: '강의색인',
   },
   alertSuccessDescription: {
     id: 'course-authoring.course-outline.reindex.alert.success.description',
-    defaultMessage: 'Course has been successfully reindexed.',
+    defaultMessage: '강의 색인 재생성이 완료되었습니다.',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.course-outline.reindex.alert.success.aria.labelledby',
@@ -27,21 +27,21 @@ const messages = defineMessages({
   },
   newSectionButton: {
     id: 'course-authoring.course-outline.section-list.button.new-section',
-    defaultMessage: 'New section',
+    defaultMessage: '새 학습활동',
   },
   exportTagsCreatingToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.creating.message',
-    defaultMessage: 'Please wait. Creating export file for course tags...',
+    defaultMessage: '잠시만 기다려주세요. 강의 태그 내보내기 파일 생성 중입니다.',
     description: 'In progress message in toast when exporting tags of a course',
   },
   exportTagsSuccessToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.success.message',
-    defaultMessage: 'Course tags exported successfully',
+    defaultMessage: '강의 태그를 성공적으로 내보냈습니다',
     description: 'Success message in toast when exporting tags of a course',
   },
   exportTagsErrorToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.error.message',
-    defaultMessage: 'An error has occurred creating the file',
+    defaultMessage: '파일을 생성하는 중 오류가 발생했습니다.',
     description: 'Error message in toast when exporting tags of a course',
   },
 });

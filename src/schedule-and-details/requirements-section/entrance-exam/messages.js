@@ -3,19 +3,19 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   requirementsEntrance: {
     id: 'course-authoring.schedule-section.requirements.entrance.label',
-    defaultMessage: 'Entrance exam',
+    defaultMessage: '수강 전 시험',
   },
   requirementsEntranceCollapseTitle: {
     id: 'course-authoring.schedule-section.requirements.entrance.collapse.title',
-    defaultMessage: 'Require students to pass an exam before beginning the course.',
+    defaultMessage: '강의를 시작하기 전에 학생들에게 시험에 합격하도록 요구합니다.',
   },
   requirementsEntranceCollapseParagraph: {
     id: 'course-authoring.schedule-section.requirements.entrance.collapse.paragraph',
-    defaultMessage: 'You can now view and author your course entrance exam from the {hyperlink}.',
+    defaultMessage: '이제 {hyperlink}에서 수강 전 시험을 볼수 있습니다.',
   },
   requirementsEntranceCollapseHyperlink: {
     id: 'course-authoring.schedule-section.requirements.entrance.collapse.hyperlink',
-    defaultMessage: 'course outline',
+    defaultMessage: '강의 개요',
   },
 });
 

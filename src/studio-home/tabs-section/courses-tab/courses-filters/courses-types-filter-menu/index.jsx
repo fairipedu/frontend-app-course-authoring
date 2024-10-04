@@ -13,17 +13,17 @@ const CoursesTypesFilterMenu = ({ onItemMenuSelected }) => {
     () => [
       {
         id: 'all-courses',
-        name: intl.formatMessage(messages.coursesTypesFilterMenuAllCurses),
+        name: '전체 강의',
         value: 'allCourses',
       },
       {
         id: 'active-courses',
-        name: intl.formatMessage(messages.coursesTypesFilterMenuActiveCurses),
+        name: '진행중인 강의',
         value: 'activeCourses',
       },
       {
         id: 'archived-courses',
-        name: intl.formatMessage(messages.coursesTypesFilterMenuArchivedCurses),
+        name: '종료된 강의',
         value: 'archivedCourses',
       },
     ],
@@ -39,7 +39,7 @@ const CoursesTypesFilterMenu = ({ onItemMenuSelected }) => {
       id="dropdown-toggle-course-type-menu"
       menuItems={courseTypes}
       onItemMenuSelected={handleCourseTypeSelected}
-      defaultItemSelectedText={intl.formatMessage(messages.coursesTypesFilterMenuAllCurses)}
+      defaultItemSelectedText='전체 강의'
     />
   );
 };

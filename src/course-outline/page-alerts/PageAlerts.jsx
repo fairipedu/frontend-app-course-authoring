@@ -112,7 +112,7 @@ const PageAlerts = ({
           destination={discussionsIncontextFeedbackUrl}
           target="_blank"
         >
-          {intl.formatMessage(messages.discussionNotificationFeedback)}
+          {intl.formatMessage(messages.discussionNotificationFeedback)}         
         </Hyperlink>
       </Alert>
     );

@@ -3,119 +3,119 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   courseDisplayNameLabel: {
     id: 'course-authoring.create-or-rerun-course.display-name.label',
-    defaultMessage: 'Course name',
+    defaultMessage: '강의명',
   },
   courseDisplayNamePlaceholder: {
     id: 'course-authoring.create-or-rerun-course.display-name.placeholder',
-    defaultMessage: 'e.g. Introduction to Computer Science',
+    defaultMessage: '예) 알고리즘 및 실습',
   },
   courseDisplayNameCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.display-name.help-text',
-    defaultMessage: 'The public display name for your course. This cannot be changed, but you can set a different display name in advanced settings later.',
+    defaultMessage: '강의명은 페이지에 노출됩니다. 강의명은 변경되지 않습니다.',
   },
   courseDisplayNameRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.rerun.display-name.help-text',
-    defaultMessage: 'The public display name for the new course. (This name is often the same as the original course name.)',
+    defaultMessage: '강의명',
   },
   courseOrgLabel: {
     id: 'course-authoring.create-or-rerun-course.org.label',
-    defaultMessage: 'Organization',
+    defaultMessage: '단체아이디',
   },
   courseOrgPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.org.placeholder',
-    defaultMessage: 'e.g. UniversityX or OrganizationX',
+    defaultMessage: '예) 페어립대학교',
   },
   courseOrgNoOptions: {
     id: 'course-authoring.create-or-rerun-course.org.no-options',
-    defaultMessage: 'No options',
+    defaultMessage: '옵션없음',
   },
   courseOrgCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.org.help-text',
-    defaultMessage: 'The name of the organization sponsoring the course. {strong} This cannot be changed, but you can set a different display name in advanced settings later.',
+    defaultMessage: '강의가 속할 단체아이디 {strong} 단체아이디는 변경할 수 없지만 고급설정에서 표시될 이름을 설정할 수 있습니다.',
   },
   courseOrgRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.rerun.org.help-text',
-    defaultMessage: 'The name of the organization sponsoring the new course. (This name is often the same as the original organization name.) {strong}',
+    defaultMessage: '새 강의가 속하는 단체아이디입니다. {strong}',
   },
   courseNoteNoSpaceAllowedStrong: {
     id: 'course-authoring.create-or-rerun-course.no-space-allowed.strong',
-    defaultMessage: 'Note: No spaces or special characters are allowed.',
+    defaultMessage: '참고 : 공백이나 특수 문자는 허용되지 않습니다.',
   },
   courseNoteOrgNameIsPartStrong: {
     id: 'course-authoring.create-or-rerun-course.org.help-text.strong',
-    defaultMessage: 'Note: The organization name is part of the course URL.',
+    defaultMessage: '참고 : 단체아이디는 강의 URL의 일부로 사용됩니다.',
   },
   courseNumberLabel: {
     id: 'course-authoring.create-or-rerun-course.number.label',
-    defaultMessage: 'Course number',
+    defaultMessage: '강의아이디',
   },
   courseNumberPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.number.placeholder',
-    defaultMessage: 'e.g. CS101',
+    defaultMessage: '예) CS101',
   },
   courseNumberCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.number.help-text',
-    defaultMessage: 'The unique number that identifies your course within your organization. {strong}',
+    defaultMessage: '단체에서 강의를 식별하는 고유한 아이디입니다. {strong}',
   },
   courseNumberRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.rerun.number.help-text',
-    defaultMessage: 'The unique number that identifies the new course within the organization. (This number will be the same as the original course number and cannot be changed.)',
+    defaultMessage: '단체에서 새 강의를 식별하는 고유한 아이디 입니다. (이 아이디는 원래 강의아이디와 동일하며 변경 할 수 없습니다.)',
   },
   courseNotePartCourseURLRequireStrong: {
     id: 'course-authoring.create-or-rerun-course.number.help-text.strong',
-    defaultMessage: 'Note: This is part of your course URL, so no spaces or special characters are allowed and it cannot be changed.',
+    defaultMessage: '참고 : 강의 URL의 일부이므로 공백이나 특수 문자가 허용되지 않으며 변경할 수 없습니다.',
   },
   courseRunLabel: {
     id: 'course-authoring.create-or-rerun-course.run.label',
-    defaultMessage: 'Course run',
+    defaultMessage: '강의기간',
   },
   courseRunPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.run.placeholder',
-    defaultMessage: 'e.g. 2014_T1',
+    defaultMessage: '예) 2024_T1',
   },
   courseRunCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.run.help-text',
-    defaultMessage: 'The term in which your course will run. {strong}',
+    defaultMessage: '강의가 진행될 기간. {strong}',
   },
   courseRunRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.rerun.help-text',
-    defaultMessage: 'The term in which the new course will run. (This value is often different than the original course run value.){strong}',
+    defaultMessage: '새 강의가 진행되는 기간입니다. (이 값은 원래 강의기간과 다른경우가 많습니다.){strong}',
   },
   defaultPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.default-placeholder',
-    defaultMessage: 'Label',
+    defaultMessage: '표시명',
   },
   createButton: {
     id: 'course-authoring.create-or-rerun-course.create.button.create',
-    defaultMessage: 'Create',
+    defaultMessage: '생성',
   },
   rerunCreateButton: {
     id: 'course-authoring.create-or-rerun-course.rerun.button.create',
-    defaultMessage: 'Create re-run',
+    defaultMessage: '복제',
   },
   creatingButton: {
     id: 'course-authoring.create-or-rerun-course.button.creating',
-    defaultMessage: 'Creating',
+    defaultMessage: '생성중',
   },
   rerunningCreateButton: {
     id: 'course-authoring.create-or-rerun-course.rerun.button.rerunning',
-    defaultMessage: 'Processing re-run request',
+    defaultMessage: '복제 처리 중',
   },
   cancelButton: {
     id: 'course-authoring.create-or-rerun-course.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: '취소',
   },
   requiredFieldError: {
     id: 'course-authoring.create-or-rerun-course.required.error',
-    defaultMessage: 'Required field.',
+    defaultMessage: '필수 입력값입니다.',
   },
   disallowedCharsError: {
     id: 'course-authoring.create-or-rerun-course.disallowed-chars.error',
-    defaultMessage: 'Please do not use any spaces or special characters in this field.',
+    defaultMessage: '공백이나 특수 문자를 사용 할 수 없습니다.',
   },
   noSpaceError: {
     id: 'course-authoring.create-or-rerun-course.no-space.error',
-    defaultMessage: 'Please do not use any spaces in this field.',
+    defaultMessage: '공백을 사용할 수 없습니다.',
   },
   alertErrorExistsAriaLabelledBy: {
     id: 'course-authoring.create-or-rerun-course.error.already-exists.labelledBy',

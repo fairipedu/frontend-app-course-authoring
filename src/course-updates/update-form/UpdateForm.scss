@@ -1,8 +1,5 @@
 .update-form {
-  @include pgn-box-shadow(1, "centered");
-
-  border: .0625rem solid $gray-200;
-  border-radius: .375rem;
+  
   background: $white;
   margin-bottom: map-get($spacers, 4);
   padding: $spacer 1.875rem;
@@ -12,19 +9,25 @@
     font-weight: 600;
     margin-bottom: $spacer;
   }
-
+  .datepicker-custom-control {
+    background: #F2F3F6;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.02), inset 0 0 0;
+    border:0px;
+  }
+  .position-relative {
+    display:inline-block;
+  }
+  
   .datepicker-field {
-    display: flex;
+    display: block;
     align-items: center;
     gap: .5rem;
     position: relative;
 
     .datepicker-float-labels {
-      position: absolute;
+      position: relative;
       padding: 0 .1875rem;
-      top: -.625rem;
-      left: .3125rem;
-      z-index: 9;
+      display: block;
       background-color: $white;
     }
 

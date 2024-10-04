@@ -183,7 +183,6 @@ const CreateOrRerunCourseForm = ({
             key={value}
             onClick={() => setFieldValue(field.name, value)}
           >
-            {value}
           </Dropdown.Item>
         ))}
       </Dropdown.Menu>
@@ -239,7 +238,6 @@ const CreateOrRerunCourseForm = ({
                 ref={field?.ref}
               />
             ) : renderOrgField(field)}
-            <Form.Text>{field.helpText}</Form.Text>
             {hasErrorField(field.name) && (
               <Form.Control.Feedback
                 className="feedback-error"
@@ -249,6 +247,8 @@ const CreateOrRerunCourseForm = ({
                 {errors[field.name]}
               </Form.Control.Feedback>
             )}
+            <Form.Text>{field.helpText}</Form.Text>
+            
           </Form.Group>
         ))}
         <ActionRow className="justify-content-start">
@@ -256,7 +256,7 @@ const CreateOrRerunCourseForm = ({
             variant="outline-primary"
             onClick={handleOnClickCancel}
           >
-            {intl.formatMessage(messages.cancelButton)}
+            취소
           </Button>
           <StatefulButton
             key="save-button"

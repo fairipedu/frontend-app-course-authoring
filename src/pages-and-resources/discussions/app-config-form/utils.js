@@ -33,12 +33,12 @@ export const isSameDay = (startDate, endDate) => moment(startDate).isSame(endDat
 export const isSameMonth = (startDate, endDate) => moment(startDate).isSame(endDate, 'month');
 export const isSameYear = (startDate, endDate) => moment(startDate).isSame(endDate, 'year');
 export const getTime = (dateTime) => (dateTime ? dateTime.split('T')[1] : '');
-export const hasValidDateFormat = (date) => moment(date, ['MM/DD/YYYY', 'YYYY-MM-DD'], true).isValid();
+export const hasValidDateFormat = (date) => moment(date, ['YYYY/MM/DD', 'YYYY-MM-DD'], true).isValid();
 export const hasValidTimeFormat = (time) => time && moment(time, validTimeFormats, true).isValid();
 export const startOfDayTime = (time) => time || moment().startOf('day').format('HH:mm');
 export const endOfDayTime = (time) => time || moment().endOf('day').format('HH:mm');
 export const normalizeTime = (time) => time && moment(time, validTimeFormats, true).format('HH:mm');
-export const normalizeDate = (date) => moment(date, ['MM/DD/YYYY', 'YYYY-MM-DDTHH:mm', 'YYYY-MM-DD'], true).format('YYYY-MM-DD');
+export const normalizeDate = (date) => moment(date, ['YYYY/MM/DD', 'YYYY-MM-DDTHH:mm', 'YYYY-MM-DD'], true).format('YYYY-MM-DD');
 
 export const decodeDateTime = (date, time) => {
   const nDate = normalizeDate(date);
@@ -69,7 +69,7 @@ export const formatRestrictedDates = ({
   const mEndDateTime = decodeDateTime(endDate, endOfDayTime(endTime));
 
   if (hasSameDay && !isTimeAvailable) {
-    formattedDate = mStartDate.format('MMMM D, YYYY');
+    formattedDate = mStartDate.format('YYYY.MM.DD');
   } else if (hasSameDay && isTimeAvailable) {
     formattedDate = `
       ${mStartDateTime.format('MMMM D, YYYY, h:mma')} -

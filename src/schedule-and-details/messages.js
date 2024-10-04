@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.schedule.heading.title',
-    defaultMessage: 'Schedule & details',
+    defaultMessage: ' 일정 및 상세',
   },
   headingSubtitle: {
     id: 'course-authoring.schedule.heading.subtitle',
@@ -11,15 +11,15 @@ const messages = defineMessages({
   },
   buttonSaveText: {
     id: 'course-authoring.schedule.alert.button.save',
-    defaultMessage: 'Save changes',
+    defaultMessage: '변경사항저장',
   },
   buttonSavingText: {
     id: 'course-authoring.schedule.alert.button.saving',
-    defaultMessage: 'Saving',
+    defaultMessage: '저장',
   },
   buttonCancelText: {
     id: 'course-authoring.schedule.alert.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: '취소',
   },
   alertWarningAriaLabelledby: {
     id: 'course-authoring.schedule.alert.warning.aria.labelledby',
@@ -31,19 +31,19 @@ const messages = defineMessages({
   },
   alertWarning: {
     id: 'course-authoring.schedule.alert.warning',
-    defaultMessage: 'You\'ve made some changes',
+    defaultMessage: '변경 사항이 있습니다',
   },
   alertWarningOnSaveWithError: {
     id: 'course-authoring.schedule.alert.warning.save.error',
-    defaultMessage: 'You\'ve made some changes, but there are some errors',
+    defaultMessage: '변경 사항이 있지만 몇가지 오류가 있습니다.',
   },
   alertWarningDescriptions: {
     id: 'course-authoring.schedule.alert.warning.descriptions',
-    defaultMessage: 'Your changes will not take effect until you save your progress.',
+    defaultMessage: '진행 상황을 저장하기 전까지 변경 사항이 적용되지 않습니다.',
   },
   alertWarningDescriptionsOnSaveWithError: {
     id: 'course-authoring.schedule.alert.warning.save.descriptions.error',
-    defaultMessage: 'Please address the errors on this page first, and then save your progress.',
+    defaultMessage: '먼저 이 페이지의 오류를 해결한 다음 진행 상황을 저장하십시오.',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.schedule.alert.success.aria.labelledby',
@@ -55,7 +55,7 @@ const messages = defineMessages({
   },
   alertSuccess: {
     id: 'course-authoring.schedule.alert.success',
-    defaultMessage: 'Your changes have been saved.',
+    defaultMessage: '변경 사항이 저장되었습니다.',
   },
   alertLoadFailAriaLabelledby: {
     id: 'course-authoring.schedule.alert.load.fail.aria.labelledby',
@@ -67,7 +67,7 @@ const messages = defineMessages({
   },
   alertLoadFail: {
     id: 'course-authoring.schedule.alert.load.fail',
-    defaultMessage: 'We encountered an error when loading your settings.',
+    defaultMessage: '설정을 로드하는 동안 오류가 발생했습니다.',
   },
   alertFailAriaLabelledby: {
     id: 'course-authoring.schedule.alert.fail.aria.labelledby',
@@ -79,39 +79,39 @@ const messages = defineMessages({
   },
   alertFail: {
     id: 'course-authoring.schedule.alert.fail',
-    defaultMessage: 'We encountered an error when saving your changes.',
+    defaultMessage: '변경 사항을 저장하는 동안 오류가 발생했습니다.',
   },
   errorMessage1: {
     id: 'course-authoring.schedule.schedule-section.error-message-1',
-    defaultMessage: 'The certificates display behavior must be \'A date after the course end date\' if certificate available date is set.',
+    defaultMessage: '인증서 사용 가능 날짜가 설정된 경우 인증서 표시 동작은 \'과정 종료 날짜 이후의 날짜\'여야 합니다.',
   },
   errorMessage2: {
     id: 'course-authoring.schedule.schedule-section.error-message-2',
-    defaultMessage: 'The enrollment end date cannot be after the course end date.',
+    defaultMessage: '수강신청 종료일은 강의 종료일 이후일 수 없습니다.',
   },
   errorMessage3: {
     id: 'course-authoring.schedule.schedule-section.error-message-3',
-    defaultMessage: 'The enrollment start date cannot be after the enrollment end date.',
+    defaultMessage: '수강신청 시작일은 수강신청 종료일 이후일 수 없습니다.',
   },
   errorMessage4: {
     id: 'course-authoring.schedule.schedule-section.error-message-4',
-    defaultMessage: 'The course start date must be later than the enrollment start date.',
+    defaultMessage: '강의 시작 날짜는 등록 시작 날짜보다 나중이어야 합니다.',
   },
   errorMessage5: {
     id: 'course-authoring.schedule.schedule-section.error-message-5',
-    defaultMessage: 'The course end date must be later than the course start date.',
+    defaultMessage: '강의 종료 날짜는 강의 시작 날짜보다 나중이어야 합니다.',
   },
   errorMessage6: {
     id: 'course-authoring.schedule.schedule-section.error-message-6',
-    defaultMessage: 'The certificate available date must be later than the course end date.',
+    defaultMessage: '인증서 사용 가능 날짜는 강의 종료 날짜보다 나중이어야 합니다.',
   },
   errorMessage7: {
     id: 'course-authoring.schedule.schedule-section.error-message-7',
-    defaultMessage: 'The course must have an assigned start date.',
+    defaultMessage: '강의에는 지정된 시작 날짜가 있어야 합니다.',
   },
   errorMessage8: {
     id: 'course-authoring.schedule.schedule-section.error-message-8',
-    defaultMessage: 'Please enter an integer between %(min)s and %(max)s.',
+    defaultMessage: '%(min)s ~ %(max)s 사이의 정수를 입력하세요.',
   },
 });
 

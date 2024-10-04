@@ -30,7 +30,7 @@
 .alert-toast {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: calc(100% - 200px);
   padding: 0 .625rem;
   z-index: $zindex-modal;
 }
@@ -66,13 +66,13 @@
 .setting-sidebar-supplementary {
   .setting-sidebar-supplementary-about {
     .setting-sidebar-supplementary-about-title {
-      font: normal $font-weight-bold 1.125rem/1.5rem $font-family-base;
+      font: normal $font-weight-bold 1.125rem/1.5rem;
       color: $headings-color;
       margin-bottom: 1.25rem;
     }
 
     .setting-sidebar-supplementary-about-descriptions {
-      font: normal $font-weight-normal .875rem/1.5rem $font-family-base;
+      font: normal $font-weight-normal .875rem/1.5rem;
       color: $text-color-base;
     }
   }
@@ -81,7 +81,7 @@
     list-style: none;
 
     .setting-sidebar-supplementary-other-link {
-      font: normal $font-weight-normal .875rem/1.5rem $font-family-base;
+      font: normal $font-weight-normal .875rem/1.5rem;
       line-height: 1.5rem;
       color: $info-500;
       margin-bottom: .5rem;
@@ -89,7 +89,7 @@
   }
 
   .setting-sidebar-supplementary-other-title {
-    font: normal $font-weight-bold 1.125rem/1.5rem $font-family-base;
+    font: normal $font-weight-bold 1.125rem/1.5rem;
     color: $headings-color;
     margin-bottom: 1.25rem;
   }

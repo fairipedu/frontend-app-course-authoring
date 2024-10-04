@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   enableCalculatorLabel: {
     id: 'course-authoring.pages-resources.calculator.enable-calculator.label',
-    defaultMessage: 'Calculator',
+    defaultMessage: '계산기',
   },
   enableCalculatorHelp: {
     id: 'course-authoring.pages-resources.calculator.enable-calculator.help',

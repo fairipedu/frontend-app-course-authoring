@@ -15,7 +15,7 @@ const messages = defineMessages({
   },
   homePageLoadFailedMessage: {
     id: 'course-authoring.studio-home.page-load.failed.message',
-    defaultMessage: 'Failed to load Studio home. Please try again later.',
+    defaultMessage: '강의관리 대시보드를 로드하지 못했습니다. 나중에 다시 시도해 주세요.',
   },
   emailStaffBtnText: {
     id: 'course-authoring.studio-home.email-staff.btn.text',

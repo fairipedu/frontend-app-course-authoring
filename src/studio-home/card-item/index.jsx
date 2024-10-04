@@ -45,7 +45,7 @@ const CardItem = ({
   const hasDisplayName = (displayName ?? '').trim().length ? displayName : courseKey;
 
   return (
-    <Card className="card-item">
+    <Card className="col-4 card-item mr-4">
       <Card.Header
         size="sm"
         title={!readOnlyItem ? (
@@ -59,27 +59,7 @@ const CardItem = ({
           <span className="card-item-title">{displayName}</span>
         )}
         subtitle={subtitle}
-        actions={showActions && (
-          isPaginated ? (
-            <Dropdown>
-              <Dropdown.Toggle
-                as={IconButton}
-                iconAs={MoreHoriz}
-                variant="primary"
-                data-testid="toggle-dropdown"
-              />
-              <Dropdown.Menu>
-                {isShowRerunLink && (
-                  <Dropdown.Item href={trimSlashes(rerunLink)}>
-                    {messages.btnReRunText.defaultMessage}
-                  </Dropdown.Item>
-                )}
-                <Dropdown.Item href={lmsLink}>
-                  {intl.formatMessage(messages.viewLiveBtnText)}
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          ) : (
+        actions={(
             <ActionRow>
               {isShowRerunLink && (
                 <Hyperlink
@@ -98,9 +78,9 @@ const CardItem = ({
                 {intl.formatMessage(messages.viewLiveBtnText)}
               </Hyperlink>
             </ActionRow>
-          )
         )}
       />
+        
     </Card>
   );
 };

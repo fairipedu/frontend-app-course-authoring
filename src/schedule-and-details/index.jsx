@@ -54,7 +54,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
 
   const course = useModel('courseDetails', courseId);
   document.title = getPageHeadTitle(course?.name, intl.formatMessage(messages.headingTitle));
-
+  
   const {
     platformName,
     isCreditCourse,
@@ -170,11 +170,11 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
   const alertWhileSavingDescription = hasErrors
     ? intl.formatMessage(messages.alertWarningDescriptionsOnSaveWithError)
     : intl.formatMessage(messages.alertWarningDescriptions);
-
+  
   return (
     <>
-      <Container size="xl" className="schedule-and-details px-4">
-        <div className="mt-5">
+      <Container size="xl" className="sub-container schedule-and-details p-4">
+        <div className="">
           <AlertMessage
             show={showSuccessfulAlert}
             variant="success"
@@ -224,13 +224,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
           </header>
         </div>
         <section className="setting-items mb-4">
-          <Layout
-            lg={[{ span: 9 }, { span: 3 }]}
-            md={[{ span: 9 }, { span: 3 }]}
-            sm={[{ span: 9 }, { span: 3 }]}
-            xs={[{ span: 9 }, { span: 3 }]}
-            xl={[{ span: 9 }, { span: 3 }]}
-          >
+          <Layout>
             <Layout.Element>
               <article>
                 <div>
@@ -269,7 +263,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
                   />
                   {aboutPageEditable && (
                     <DetailsSection
-                      language={language}
+                      language="ko"
                       languageOptions={languageOptions}
                       onChange={handleValuesChange}
                     />
@@ -329,12 +323,6 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
                   )}
                 </div>
               </article>
-            </Layout.Element>
-            <Layout.Element>
-              <ScheduleSidebar
-                courseId={courseId}
-                proctoredExamSettingsUrl={mfeProctoredExamSettingsUrl}
-              />
             </Layout.Element>
           </Layout>
         </section>

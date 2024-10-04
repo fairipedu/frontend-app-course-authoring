@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import {
+  Form,
   Button,
   Container,
   Layout,
@@ -55,11 +56,12 @@ import {
 import { useCourseOutline } from './hooks';
 import messages from './messages';
 import { getTagsExportFile } from './data/api';
+import axios from 'axios';
 
 const CourseOutline = ({ courseId }) => {
   const intl = useIntl();
   const location = useLocation();
-
+  
   const {
     courseName,
     savingStatus,
@@ -237,8 +239,8 @@ const CourseOutline = ({ courseId }) => {
       <Helmet>
         <title>{getPageHeadTitle(courseName, intl.formatMessage(messages.headingTitle))}</title>
       </Helmet>
-      <Container size="xl" className="px-4">
-        <section className="course-outline-container mb-4 mt-5">
+      <Container size="xl" className="sub-container p-4">
+        <section className="course-outline-container mb-4">
           <PageAlerts
             courseId={courseId}
             notificationDismissUrl={notificationDismissUrl}
@@ -253,6 +255,7 @@ const CourseOutline = ({ courseId }) => {
             savingStatus={savingStatus}
             errors={errors}
           />
+          
           <TransitionReplace>
             {showSuccessAlert ? (
               <AlertMessage
@@ -269,7 +272,8 @@ const CourseOutline = ({ courseId }) => {
             ) : null}
           </TransitionReplace>
           <SubHeader
-            title={intl.formatMessage(messages.headingTitle)}
+            courseName={courseName}
+            title="강의계획관리"
             subtitle={intl.formatMessage(messages.headingSubtitle)}
             headerActions={(
               <HeaderNavigations
@@ -283,16 +287,27 @@ const CourseOutline = ({ courseId }) => {
               />
             )}
           />
-          <Layout
-            lg={[{ span: 9 }, { span: 3 }]}
-            md={[{ span: 9 }, { span: 3 }]}
-            sm={[{ span: 12 }, { span: 12 }]}
-            xs={[{ span: 12 }, { span: 12 }]}
-            xl={[{ span: 9 }, { span: 3 }]}
-          >
+          <Layout>
             <Layout.Element>
               <article>
                 <div>
+                  <h3>강의 카테고리 설정</h3>
+                  <div>학과/학부 선택(다중선택 가능)</div>
+                  <div>
+                    <Form.RadioSet
+                      name="reular"
+                      data-testid="reular"
+                      value="true"
+                      onChange=""
+                    >
+                      <Form.Radio value="true" data-testid="regular">
+                        교과
+                      </Form.Radio>
+                      <Form.Radio value="false" data-testid="irrregular">
+                        비교과
+                      </Form.Radio>
+                    </Form.RadioSet>
+                  </div>
                   <section className="course-outline-section">
                     <StatusBar
                       courseId={courseId}
@@ -432,9 +447,6 @@ const CourseOutline = ({ courseId }) => {
                   </section>
                 </div>
               </article>
-            </Layout.Element>
-            <Layout.Element>
-              <OutlineSideBar courseId={courseId} />
             </Layout.Element>
           </Layout>
           <EnableHighlightsModal

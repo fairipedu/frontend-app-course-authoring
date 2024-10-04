@@ -37,7 +37,7 @@ const IntroducingSection = ({
   const overviewHelpText = (
     <FormattedMessage
       id="course-authoring.schedule-section.introducing.course-overview.help-text"
-      defaultMessage="Introductions, prerequisites, FAQs that are used on {hyperlink} (formatted in HTML)"
+      defaultMessage="{hyperlink}에 사용되는 소개, 선행학습, FAQ (HTML태그 형식 사용)"
       values={{
         hyperlink: (
           <Hyperlink
@@ -55,7 +55,7 @@ const IntroducingSection = ({
   const aboutSidebarHelpText = (
     <FormattedMessage
       id="course-authoring.schedule-section.introducing.about-sidebar.help-text"
-      defaultMessage="Custom sidebar content for {hyperlink} (formatted in HTML)"
+      defaultMessage="{hyperlink}에 대한 사용자 정의 사이드바 콘텐츠 (HTML태그 형식 사용)"
       values={{
         hyperlink: (
           <Hyperlink

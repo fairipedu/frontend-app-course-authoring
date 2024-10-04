@@ -73,7 +73,7 @@ const StatusBar = ({
   const { data: courseTagCount } = useContentTagsCount(courseId);
 
   const [isManageTagsDrawerOpen, openManageTagsDrawer, closeManageTagsDrawer] = useToggle(false);
-
+  
   if (isLoading) {
     return null;
   }
@@ -96,7 +96,7 @@ const StatusBar = ({
                 hour="numeric"
                 minute="numeric"
               />
-            ) : courseReleaseDate}
+            ) : "시작일설정"} 
           </Hyperlink>
         </StatusBarItem>
         <StatusBarItem title={intl.formatMessage(messages.pacingTypeTitle)}>

@@ -11,7 +11,11 @@
 .shadow {
   box-shadow: 0 .125rem .25rem rgb(0 0 0 / .3) !important;
 }
-
+.pgn__card.card {
+  background:#F2F3F6;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.02);
+  border: 0px;
+}
 [dir="rtl"] {
   .desktop-card,
   .mobile-card {

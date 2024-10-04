@@ -10,7 +10,7 @@ import messages from './messages';
 const CourseRerunSideBar = () => {
   const intl = useIntl();
   const { default: learnMoreUrl } = useHelpUrls(['default']);
-  const defaultCourseDate = new Date(Date.UTC(2030, 0, 1, 0, 0));
+  const defaultCourseDate = new Date(Date.UTC(2024, 0, 1, 0, 0));
   const localizedCourseDate = (
     <FormattedDate
       value={defaultCourseDate}

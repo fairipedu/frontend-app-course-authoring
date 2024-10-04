@@ -37,7 +37,7 @@ export const ScheduleRow = ({
         isInvalid={!!errorFeedback}
         controlName={`${controlName}-time`}
         onChange={(date) => onChange(date, controlName)}
-        showUTC
+        
       />
     </div>
     {errorFeedback && (

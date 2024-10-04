@@ -13,22 +13,22 @@ const CoursesOrderFilterMenu = ({ onItemMenuSelected }) => {
     () => [
       {
         id: 'az-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuAscendantCurses),
+        name: '강의명 오름차순(ㄱ-ㅎ)',
         value: 'azCourses',
       },
       {
         id: 'za-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuDescendantCurses),
+        name: '강의명 내림차순(ㅎ-ㄱ)',
         value: 'zaCourses',
       },
       {
         id: 'newest-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuNewestCurses),
+        name: '강의명 최근등록순',
         value: 'newestCourses',
       },
       {
         id: 'oldest-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuOldestCurses),
+        name: '강의명 오래된순',
         value: 'oldestCourses',
       },
     ],
@@ -44,7 +44,7 @@ const CoursesOrderFilterMenu = ({ onItemMenuSelected }) => {
       id="dropdown-toggle-courses-order-menu"
       menuItems={courseOrders}
       onItemMenuSelected={handleCourseTypeSelected}
-      defaultItemSelectedText={intl.formatMessage(messages.coursesOrderFilterMenuAscendantCurses)}
+      defaultItemSelectedText="강의명 오름차순(ㄱ-ㅎ)"
     />
   );
 };

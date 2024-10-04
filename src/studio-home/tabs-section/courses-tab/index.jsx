@@ -125,7 +125,7 @@ const CoursesTab = ({
           </div>
         )}
         {hasCourses ? (
-          <>
+          <div class="d-flex justify-content-start">
             {coursesDataItems.map(
               ({
                 courseKey,
@@ -163,7 +163,7 @@ const CoursesTab = ({
                 onPageSelect={handlePageSelected}
               />
             )}
-          </>
+          </div>
         ) : (!optimizationEnabled && isNotFilteringCourses && (
           <ContactAdministrator
             hasAbilityToCreateCourse={hasAbilityToCreateCourse}
@@ -174,7 +174,7 @@ const CoursesTab = ({
         )}
 
         {isFiltered && !hasCourses && !isLoading && (
-          <Alert className="mt-4">
+          <Alert className="mt-4 no-data">
             <Alert.Heading>
               {intl.formatMessage(messages.coursesTabCourseNotFoundAlertTitle)}
             </Alert.Heading>

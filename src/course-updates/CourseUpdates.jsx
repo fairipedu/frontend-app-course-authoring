@@ -74,7 +74,7 @@ const CourseUpdates = ({ courseId }) => {
           {getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.headingTitle))}
         </title>
       </Helmet>
-      <Container size="xl" className="px-4 pt-4">
+      <Container size="xl" className="sub-container p-4">
         <section className="setting-items mb-4">
           {errors.loadingUpdates && (
             <AlertMessage
@@ -158,11 +158,13 @@ const CourseUpdates = ({ courseId }) => {
                         requestType={requestType}
                         onSubmit={handleUpdatesSubmit}
                         courseUpdatesInitialValues={courseUpdatesInitialValues}
-                      />
+                      /> 
                     )}
                     <div className="updates-container">
+                      
                       {courseUpdates.length > 0 && (
                         <div className="p-4.5">
+                          
                           {courseUpdates.map((courseUpdate, index) => (
                             isInnerFormOpen(courseUpdate.id) ? (
                               <UpdateForm

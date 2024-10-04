@@ -3,14 +3,21 @@ import React from 'react';
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { StudioHeader } from '@edx/frontend-component-header';
-import { useToggle } from '@openedx/paragon';
+import { useToggle, AvatarButton, Badge, Dropdown } from '@openedx/paragon';
 import { generatePath, useHref } from 'react-router-dom';
 
 import { SearchModal } from '../search-modal';
 import { getContentMenuItems, getSettingMenuItems, getToolsMenuItems } from './utils';
 import messages from './messages';
+import { useCourseOutline } from '../course-outline/hooks';
+
+import AuthenticatedUserDropdown from './AuthenticatedUserDropdown';
+import TabOverview from './TabOverview';
+import TabGroup from './TabGroup';
+import TabCheck from './TabCheck';
 
 interface HeaderProps {
+  tabName?: string,
   contextId?: string,
   number?: string,
   org?: string,
@@ -20,6 +27,7 @@ interface HeaderProps {
 }
 
 const Header = ({
+  tabName = '',
   contextId = '',
   org = '',
   number = '',
@@ -28,6 +36,7 @@ const Header = ({
   isLibrary = false,
 }: HeaderProps) => {
   const intl = useIntl();
+  
   const libraryHref = useHref('/library/:libraryId');
 
   const [isShowSearchModalOpen, openSearchModal, closeSearchModal] = useToggle(false);
@@ -54,10 +63,21 @@ const Header = ({
   const outlineLink = !isLibrary
     ? `${studioBaseUrl}/course/${contextId}`
     : generatePath(libraryHref, { libraryId: contextId });
-
+  //const courseId = contextId;
+  
   return (
     <>
-      <StudioHeader
+      <AuthenticatedUserDropdown />
+      
+      <h1 className="h1-title">{ title }</h1>
+      { tabName == "tab-overview" && (<TabOverview />) }
+      { tabName == "tab-group" && (<TabGroup />) }
+      { tabName == "tab-check" && (<TabCheck />) }
+    </>
+  );
+};
+/*
+<StudioHeader
         org={org}
         number={number}
         title={title}
@@ -73,8 +93,5 @@ const Header = ({
           onClose={closeSearchModal}
         />
       )}
-    </>
-  );
-};
-
+*/
 export default Header;

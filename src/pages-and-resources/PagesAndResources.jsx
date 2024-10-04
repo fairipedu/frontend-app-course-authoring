@@ -35,9 +35,9 @@ const PagesAndResources = ({ courseId, intl }) => {
   const courseAppsApiStatus = useSelector(getCourseAppsApiStatus);
 
   const { config } = useContext(AppContext);
-  const learningCourseURL = `${config.LEARNING_BASE_URL}/course/${courseId}`;
+  const learningCourseURL = `${config.LEARNING_BASE_URL}/learning/course/${courseId}/home`;
   const redirectUrl = `/course/${courseId}/pages-and-resources`;
-
+  
   // The pages here are driven by course apps. The list of course app IDs comes from the LMS API.
   // We display all enabled course apps regardless of whether or not the corresponding frontend plugin is available.
   const pages = useModels('courseApps', courseAppIds);
@@ -69,7 +69,7 @@ const PagesAndResources = ({ courseId, intl }) => {
 
   return (
     <PagesAndResourcesProvider courseId={courseId}>
-      <main className="container container-mw-md px-3">
+      <div className="sub-container p-4">
         <div className="d-flex justify-content-between my-4 my-md-5 align-items-center">
           <h3 className="m-0">{intl.formatMessage(messages.heading)}</h3>
           <Hyperlink
@@ -101,7 +101,7 @@ const PagesAndResources = ({ courseId, intl }) => {
               </>
             )
         }
-      </main>
+      </div>
     </PagesAndResourcesProvider>
   );
 };

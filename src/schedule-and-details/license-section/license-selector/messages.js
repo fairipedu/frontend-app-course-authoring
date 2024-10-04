@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   licenseType: {
     id: 'course-authoring.schedule-section.license.type',
-    defaultMessage: 'License type',
+    defaultMessage: '라이센스 종류',
   },
   licenseChoice1: {
     id: 'course-authoring.schedule-section.license.choice-1',
@@ -15,15 +15,15 @@ const messages = defineMessages({
   },
   licenseTooltip1: {
     id: 'course-authoring.schedule-section.license.tooltip-1',
-    defaultMessage: 'You reserve all rights for your work',
+    defaultMessage: '당신은 당신의 작품에 대한 모든 권리를 보유합니다',
   },
   licenseTooltip2: {
     id: 'course-authoring.schedule-section.license.tooltip-2',
-    defaultMessage: 'You waive some rights for your work, such that others can use it too',
+    defaultMessage: '다른 사람이 자신의 작품을 사용할 수 있도록 일부 권리를 포기합니다.',
   },
   creativeCommonsURLParagraph: {
     id: 'course-authoring.schedule-section.license.creative-commons.url',
-    defaultMessage: 'Learn more about creative commons',
+    defaultMessage: 'creative commons에 대해 자세히 알아보세요',
   },
 });
 

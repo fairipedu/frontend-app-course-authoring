@@ -3,27 +3,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.heading',
-    defaultMessage: 'Pages & Resources',
+    defaultMessage: '강의개요관리',
   },
   settings: {
     id: 'course-authoring.pages-resources.resources.settings.button',
-    defaultMessage: 'settings',
+    defaultMessage: '설정',
   },
   viewLiveButton: {
     id: 'course-authoring.pages-resources.viewLive.button',
-    defaultMessage: 'View live',
+    defaultMessage: '강의개요 미리보기',
   },
   errorShowingConfiguration: {
     id: 'course-authoring.pages-resources.courseAppPlugin.errorMessage',
-    defaultMessage: 'An error occurred when loading the configuration UI for that app.',
+    defaultMessage: '해당 앱에 대한 UI를 불러오는 동안 오류가 발생했습니다.',
   },
   enabled: {
     id: 'course-authoring.badge.enabled',
-    defaultMessage: 'Enabled',
+    defaultMessage: '활성화됨',
   },
   contentPermissions: {
     id: 'course-authoring.pages-resources.content-permissions.heading',
-    defaultMessage: 'Content permissions',
+    defaultMessage: '강의 접근 권한',
   },
 });
 

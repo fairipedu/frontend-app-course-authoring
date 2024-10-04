@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { ActionRow } from '@openedx/paragon';
 
 const SubHeader = ({
+  courseName,
   title,
   subtitle,
   breadcrumbs,
@@ -15,9 +16,9 @@ const SubHeader = ({
   withSubHeaderContent,
 }) => (
   <div className={`${!hideBorder && 'border-bottom border-light-400'} mb-3`}>
+    
     <header className="sub-header">
-      <h2 className="sub-header-title">
-        <small className="sub-header-title-subtitle">{subtitle}</small>
+      <h2 className="sub-header-title">        
         {breadcrumbs && (
           <div className="sub-header-breadcrumbs">{breadcrumbs}</div>
         )}
@@ -59,6 +60,7 @@ SubHeader.defaultProps = {
 };
 
 SubHeader.propTypes = {
+  courseName: PropTypes.string,
   title: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.string,

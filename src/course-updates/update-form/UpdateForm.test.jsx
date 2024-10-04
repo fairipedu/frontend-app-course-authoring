@@ -81,7 +81,7 @@ describe('<UpdateForm />', () => {
   it('render Add new update form correctly', async () => {
     const { getByText, getByDisplayValue, getByRole } = renderComponent({ requestType: REQUEST_TYPES.add_new_update });
     const { date } = courseUpdatesInitialValues(REQUEST_TYPES.add_new_update);
-    const formattedDate = moment(date).utc().format('MM/DD/yyyy');
+    const formattedDate = moment(date).utc().format('yyyy/MM/DD');
 
     expect(getByText(messages.addNewUpdateTitle.defaultMessage)).toBeInTheDocument();
     expect(getByText(messages.updateFormDate.defaultMessage)).toBeInTheDocument();

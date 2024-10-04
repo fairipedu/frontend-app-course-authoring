@@ -3,32 +3,32 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   pacingTitle: {
     id: 'course-authoring.schedule.pacing.title',
-    defaultMessage: 'Course pacing',
+    defaultMessage: '코스형태',
   },
   pacingDescription: {
     id: 'course-authoring.schedule.pacing.description',
-    defaultMessage: 'Set the pacing for this course',
+    defaultMessage: '강의 형태를 설정하세요.',
   },
   pacingRestriction: {
     id: 'course-authoring.schedule.pacing.restriction',
-    defaultMessage: 'Course pacing cannot be changed once a course has started',
+    defaultMessage: '강의가 시작된 후에는 강좌 진행 속도를 변경할 수 없습니다.',
   },
   pacingTypeInstructorLabel: {
     id: 'course-authoring.schedule.pacing.radio.instructor.label',
-    defaultMessage: 'Instructor-paced',
+    defaultMessage: '교수자주도학습',
   },
   pacingTypeInstructorDescription: {
     id: 'course-authoring.schedule.pacing.radio.instructor.description',
     defaultMessage:
-      'Instructor-paced courses progress at the pace that the course author sets. You can configure release dates for course content and due dates for assignments.',
+      '교수자주도학습은 강의 작성자가 설정한 진도에 따라 진행됩니다. 코스 콘텐츠의 공개 날짜와 과제 마감일을 구성 할 수 있습니다.',
   },
   pacingTypeSelfLabel: {
     id: 'course-authoring.schedule.pacing.radio.self-paced.label',
-    defaultMessage: 'Self-paced',
+    defaultMessage: '자기주도학습',
   },
   pacingTypeSelfDescription: {
     id: 'course-authoring.schedule.pacing.radio.self-paced.description',
-    defaultMessage: 'Self-paced courses offer suggested due dates for assignments or exams based on the learner’s enrollment date and the expected course duration. These courses offer learners flexibility to modify the assignment dates as needed.',
+    defaultMessage: '자기주도학습은 학습자의 등록 날짜와 학습자가 설정한 예상 강의 기간을 기준으로 제안된 과제 또는 시험 마감일을 제공합니다. 이 강의에서는 학습자가 필요에 따라 과제 날짜를 유연하게 수정할 수 있습니다.',
   },
 });
 

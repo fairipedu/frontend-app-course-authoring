@@ -3,67 +3,67 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   introducingTitle: {
     id: 'course-authoring.schedule-section.introducing.title',
-    defaultMessage: 'Introducing your course',
+    defaultMessage: '강의 소개',
   },
   introducingDescription: {
     id: 'course-authoring.schedule-section.introducing.description',
-    defaultMessage: 'Information for prospective students',
+    defaultMessage: '학습자 에게 보여질 강의 소개',
   },
   courseShortDescriptionLabel: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.label',
-    defaultMessage: 'Course short description',
+    defaultMessage: '강의에 대한 간략 설명',
   },
   courseShortDescriptionAriaLabel: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.aria-label',
-    defaultMessage: 'Show course short description',
+    defaultMessage: '강의 간략 설명 보기',
   },
   courseShortDescriptionHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.help-text',
-    defaultMessage: 'Appears on the course catalog page when students roll over the course name. Limit to ~150 characters',
+    defaultMessage: '학생들이 코스 이름 위로 마우스를 가져갈 때 강의 리스트 페이지에 나타납니다. 최대 150자로 제한됩니다.',
   },
   courseOverviewLabel: {
     id: 'course-authoring.schedule-section.introducing.course-overview.label',
-    defaultMessage: 'Course overview',
+    defaultMessage: '강의 개요',
   },
   courseOverviewHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-overview.help-text',
-    defaultMessage: 'Introductions, prerequisites, FAQs that are used on {hyperlink} (formatted in HTML)',
+    defaultMessage: '{hyperlink}에 사용되는 소개, 선행학습, FAQ (HTML태그 형식 사용)',
   },
   courseAboutHyperlink: {
     id: 'course-authoring.schedule-section.introducing.course-about.hyperlink',
-    defaultMessage: 'your course summary page',
+    defaultMessage: '귀하의 강의 요약 페이지',
   },
   courseAboutSidebarLabel: {
     id: 'course-authoring.schedule-section.introducing.course-about-sidebar.label',
-    defaultMessage: 'Course about sidebar HTML',
+    defaultMessage: '사이드바에 나타낼 강의 소개(HTML)',
   },
   courseAboutSidebarHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-about-sidebar.help-text',
-    defaultMessage: 'Custom sidebar content for {hyperlink} (formatted in HTML)',
+    defaultMessage: '{hyperlink}에 대한 사용자 정의 사이드바 콘텐츠 (HTML태그 형식 사용)',
   },
   courseCardImageLabel: {
     id: 'course-authoring.schedule-section.introducing.course-card-image.label',
-    defaultMessage: 'Course card image',
+    defaultMessage: '강의 리스트 이미지',
   },
   courseCardImageIdentifierText: {
     id: 'course-authoring.schedule-section.introducing.course-card-image.identifier-text',
-    defaultMessage: 'course image',
+    defaultMessage: '강의 이미지',
   },
   courseBannerImageLabel: {
     id: 'course-authoring.schedule-section.introducing.course-banner-image.label',
-    defaultMessage: 'Course banner image',
+    defaultMessage: '강의 배너 이미지',
   },
   courseBannerImageInsertText: {
     id: 'course-authoring.schedule-section.introducing.course-banner-image.insert-banner',
-    defaultMessage: 'banner image',
+    defaultMessage: '배너 이미지',
   },
   courseVideoThumbnailLabel: {
     id: 'course-authoring.schedule-section.introducing.video-thumbnail-image.label',
-    defaultMessage: 'Course video thumbnail image',
+    defaultMessage: '강의 비디오 썸네일 이미지',
   },
   courseVideoThumbnailInsertText: {
     id: 'course-authoring.schedule-section.introducing.video-thumbnail-image.insert-card',
-    defaultMessage: 'video thumbnail image',
+    defaultMessage: '비디오 썸네일 이미지',
   },
 });
 

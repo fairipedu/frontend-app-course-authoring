@@ -52,7 +52,7 @@ const CourseChecklist = ({
           })}
         </title>
       </Helmet>
-      <Container size="xl" className="p-4 pt-4.5">
+      <Container size="xl" className="sub-container p-4 pt-4.5">
         <SubHeader
           title={intl.formatMessage(messages.headingTitle)}
           subtitle={intl.formatMessage(messages.headingSubtitle)}

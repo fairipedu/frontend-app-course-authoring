@@ -23,7 +23,7 @@ const messages = defineMessages({
   },
   itemFailedFooterButton: {
     id: 'course-authoring.studio-home.processing.course-item.footer.failed.button',
-    defaultMessage: 'Dismiss',
+    defaultMessage: '다시보지않기',
   },
 });
 

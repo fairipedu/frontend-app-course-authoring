@@ -34,10 +34,10 @@ describe('<ScheduleRow />', () => {
 
   it('calls onChange on datepicker input change', () => {
     const { getByPlaceholderText } = render(<RootWrapper {...props} />);
-    const input = getByPlaceholderText('MM/DD/YYYY');
-    fireEvent.change(input, { target: { value: '06/15/2023' } });
+    const input = getByPlaceholderText('YYYY/MM/DD');
+    fireEvent.change(input, { target: { value: '2024/08/15' } });
     expect(onChangeMock).toHaveBeenCalledWith(
-      '2023-06-15T00:00:00Z',
+      '2024-08-15T00:00:00Z',
       props.controlName,
     );
   });

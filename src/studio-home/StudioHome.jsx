@@ -28,6 +28,10 @@ import messages from './messages';
 import { useStudioHome } from './hooks';
 import AlertMessage from '../generic/alert-message';
 import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import Aside from '../components/Aside';
+import Footer from '../components/Footer';
+
+
 
 const StudioHome = ({ intl }) => {
   const location = useLocation();
@@ -62,7 +66,7 @@ const StudioHome = ({ intl }) => {
     redirectToLibraryAuthoringMfe,
   } = studioHomeData;
   const authUser = getAuthenticatedUser();
-  console.log(authUser);
+  
   const getHeaderButtons = useCallback(() => {
     const headerButtons = [];
 
@@ -79,7 +83,7 @@ const StudioHome = ({ intl }) => {
     if (hasAbilityToCreateNewCourse) {
       headerButtons.push(
         <Button
-          variant="outline-primary"
+          variant="new-outline-primary"
           iconBefore={AddIcon}
           size="sm"
           disabled={showNewCourseContainer}
@@ -107,7 +111,7 @@ const StudioHome = ({ intl }) => {
 
     headerButtons.push(
       <Button
-        variant="outline-primary"
+        variant="new-outline-primary"
         iconBefore={AddIcon}
         size="sm"
         disabled={showNewCourseContainer}
@@ -143,14 +147,9 @@ const StudioHome = ({ intl }) => {
     if (!userIsActive) {
       return <VerifyEmailLayout />;
     }
+    
     return (
-      <Layout
-        lg={[{ span: 9 }, { span: 3 }]}
-        md={[{ span: 9 }, { span: 3 }]}
-        sm={[{ span: 9 }, { span: 3 }]}
-        xs={[{ span: 9 }, { span: 3 }]}
-        xl={[{ span: 9 }, { span: 3 }]}
-      >
+      <Layout>
         <Layout.Element>
           <section>
             {showNewCourseContainer && (
@@ -167,36 +166,40 @@ const StudioHome = ({ intl }) => {
             />
           </section>
         </Layout.Element>
-        <Layout.Element>
-          <HomeSidebar />
-        </Layout.Element>
       </Layout>
     );
   };
-
+  
   return (
     <>
-      <Header isHiddenMainMenu />
-      <Container size="xl" className="p-4 mt-3">
-        <section className="mb-4">
-          <article className="studio-home-sub-header">
-            <section>
-              <SubHeader
-                title={intl.formatMessage(messages.headingTitle, { studioShortName: studioShortName || 'Studio' })}
-                headerActions={headerButtons}
-              />
+      <div className="top-wrapper">
+        <aside className="aside-nav">
+          <Aside courseData={studioHomeData.courses} />
+        </aside>
+        <main>
+          <Header isHiddenMainMenu />
+          <Container size="xl" className="p-4 mt-3">
+            <section className="mb-4">
+              <article className="studio-home-sub-header">
+                <section>
+                  <SubHeader
+                    title="강의관리 대시보드"
+                    headerActions={headerButtons}
+                  />
+                </section>
+              </article>
+              {getMainBody()}
             </section>
-          </article>
-          {getMainBody()}
-        </section>
-      </Container>
-      <div className="alert-toast">
-        <InternetConnectionAlert
-          isFailed={anyQueryIsFailed}
-          isQueryPending={anyQueryIsPending}
-        />
+          </Container>
+          <div className="alert-toast">
+            <InternetConnectionAlert
+              isFailed={anyQueryIsFailed}
+              isQueryPending={anyQueryIsPending}
+            />
+          </div>
+          <Footer />
+        </main>
       </div>
-      <StudioFooter />
     </>
   );
 };

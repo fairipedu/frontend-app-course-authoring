@@ -11,7 +11,7 @@ const CourseRerunForm = ({ initialFormValues, onClickCancel }) => {
     <div className="mb-4.5">
       <div className="my-2.5">{intl.formatMessage(messages.rerunCourseDescription, {
         strong: (
-          <strong>{intl.formatMessage(messages.rerunCourseDescriptionStrong)}</strong>
+          <strong><br />{intl.formatMessage(messages.rerunCourseDescriptionStrong)}</strong>
         ),
       })}
       </div>

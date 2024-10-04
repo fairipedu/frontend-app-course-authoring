@@ -24,7 +24,7 @@ const BasicSection = ({
   const emailSubject = intl.formatMessage(
     {
       id: 'course-authoring.schedule.basic.email.subject',
-      defaultMessage: 'Enroll in {courseDisplayName}.',
+      defaultMessage: '{courseDisplayName} 등록.',
     },
     { courseDisplayName },
   );
@@ -33,7 +33,7 @@ const BasicSection = ({
     {
       id: 'course-authoring.schedule.basic.email.body',
       defaultMessage:
-        'The course {courseDisplayName}, provided by {platformName}, is open for enrollment. Please navigate to this course at {lmsLinkForAboutPage} to enroll.',
+        '{platformName}에서 제공하는 {courseDisplayName} 강의가 등록을 위해 열려 있습니다. 등록하려면 {lmsLinkForAboutPage}에서 이 과정으로 이동하십시오.',
     },
     {
       courseDisplayName,
@@ -45,9 +45,9 @@ const BasicSection = ({
   const promotionTitle = (
     <FormattedMessage
       id="course-authoring.schedule.basic.promotion.title"
-      defaultMessage="Course summary page {smallText}"
+      defaultMessage="강의 요약 페이지{smallText}"
       values={{
-        smallText: <small>(for student enrollment and access)</small>,
+        smallText: <small>(학생 등록 및 접근허용)</small>,
       }}
     />
   );

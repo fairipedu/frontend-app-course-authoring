@@ -3,43 +3,43 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   updateFormDate: {
     id: 'course-authoring.course-updates.update-form.date',
-    defaultMessage: 'Date',
+    defaultMessage: '날짜',
   },
   updateFormInValid: {
     id: 'course-authoring.course-updates.update-form.inValid',
-    defaultMessage: 'Action required: Enter a valid date.',
+    defaultMessage: '필수조치: 날짜형식이 맞지 않습니다.',
   },
   updateFormCalendarAltText: {
     id: 'course-authoring.course-updates.update-form.calendar-alt-text',
-    defaultMessage: 'Calendar for datepicker input',
+    defaultMessage: '날짜입력을위한 캘린더',
   },
   updateFormErrorAltText: {
     id: 'course-authoring.course-updates.update-form.error-alt-text',
-    defaultMessage: 'Error icon',
+    defaultMessage: '오류아이콘',
   },
   addNewUpdateTitle: {
     id: 'course-authoring.course-updates.update-form.new-update-title',
-    defaultMessage: 'Add new update',
+    defaultMessage: '새 알림등록',
   },
   editUpdateTitle: {
     id: 'course-authoring.course-updates.update-form.edit-update-title',
-    defaultMessage: 'Edit update',
+    defaultMessage: '수정하기',
   },
   editHandoutsTitle: {
     id: 'course-authoring.course-updates.update-form.edit-handouts-title',
-    defaultMessage: 'Edit handouts',
+    defaultMessage: '준비물수정',
   },
   saveButton: {
     id: 'course-authoring.course-updates.actions.save',
-    defaultMessage: 'Save',
+    defaultMessage: '저장',
   },
   postButton: {
     id: 'course-authoring.course-updates.actions.post',
-    defaultMessage: 'Post',
+    defaultMessage: '작성',
   },
   cancelButton: {
     id: 'course-authoring.course-updates.actions.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: '취소',
   },
 });
 

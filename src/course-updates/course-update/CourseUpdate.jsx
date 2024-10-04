@@ -15,7 +15,7 @@ const CourseUpdate = ({
   isDisabledButtons,
 }) => {
   const intl = useIntl();
-
+  
   return (
     <div className="course-update" data-testid="course-update">
       <div className="course-update-header">
@@ -47,11 +47,13 @@ const CourseUpdate = ({
       </div>
       {Boolean(contentForUpdate) && (
         <div
-          className="small text-gray-800"
+          className="editor-content small text-gray-800"
           data-testid="course-update-content"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: contentForUpdate }}
-        />
+        >
+          
+        </div>
       )}
     </div>
   );
