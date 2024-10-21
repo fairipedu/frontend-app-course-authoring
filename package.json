@@ -1,10 +1,10 @@
 {
-  "name": "@edx/frontend-app-course-authoring",
+  "name": "@fairipedu/frontend-app-course-authoring",
   "version": "0.1.0",
   "description": "Frontend application template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openedx/frontend-app-course-authoring.git"
+    "url": "git+https://github.com/fairipedu/frontend-app-course-authoring.git"
   },
   "browserslist": [
     "extends @edx/browserslist-config"
